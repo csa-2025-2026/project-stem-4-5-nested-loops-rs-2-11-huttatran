@@ -7,7 +7,7 @@ public class Main
     // printNTimes("code", 3);
     // printNums();
     // uprightNumberTriangle(5);
-    starTree();
+    // starTree();
     multTable();
   }
 
@@ -50,17 +50,15 @@ public class Main
   public static void starTree()
   {
     int i = 10;
+    int e = 0;
     while (i > 0) {
-      int l = 0;
-      int e = 0;
       for (int j = 0; j < i; j++) {
         System.out.print("* ");
       }
       System.out.println("");
       
-      while (l < e) {
+      for (int l = 0; l <= e; l++) {
         System.out.print(" ");
-        l++;
       }
       e++;
       i--;
@@ -69,6 +67,11 @@ public class Main
 
   public static void multTable()
   {
-    // code solution here
+    for (int l  = 1; l <= 10; l++) {
+      for (int i = 1; i <= 10; i++) {
+        System.out.print(i*l + " ");
+      }
+      System.out.println("");
+  }
   }
 }
